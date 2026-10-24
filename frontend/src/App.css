@@ -1,0 +1,105 @@
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 60px;
+}
+
+.workout-details {
+  background: white;
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.workout-details h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #1aac83;
+}
+
+.workout-details p {
+  margin: 0 0 6px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.workout-date {
+  margin-top: 12px !important;
+  font-size: 0.8em !important;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ffefef;
+  color: #e7195a;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #ffdede;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+}
+
+.create h3 {
+  margin-top: 0;
+}
+
+.create label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.create input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.create button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #1aac83;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.create button:hover {
+  background: #159570;
+}
+
+.create button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e7195a;
+  background: #ffefef;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
