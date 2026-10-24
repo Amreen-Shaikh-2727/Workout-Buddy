@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const WorkoutContext = createContext();
 
-const API_URL = "http://localhost:5000/api/workouts";
+const API_URL = "https://workout-buddy-1v1d.onrender.com/api/workouts";
 
 const workoutReducer = (state, action) => {
   switch (action.type) {

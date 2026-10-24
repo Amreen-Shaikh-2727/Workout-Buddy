@@ -3,7 +3,7 @@ import { useContext } from "react";
 import axios from "axios";
 import { WorkoutContext } from "../context/WorkoutContext";
 
-const API_URL = "http://localhost:5000/api/workouts";
+const API_URL = "https://workout-buddy-1v1d.onrender.com/api/workouts";
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useContext(WorkoutContext);
