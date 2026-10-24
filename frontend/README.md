@@ -1,16 +1,34 @@
-# React + Vite
+# Workout Buddy
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A workout tracking application built using React, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Backend
 
-## React Compiler
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure the `.env` file contains your MongoDB connection string and port number.
 
-## Expanding the Oxlint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Open another terminal and run:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Features
+
+- Add workouts
+- View workouts
+- Delete workouts
+- Store workouts in MongoDB
